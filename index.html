@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>US Environmental Cleaning and Disinfecting | NYC Commercial Cleaning</title>
-    <meta name="description" content="Explore professional cleaning and disinfection solutions for commercial and specialized spaces in New York City. Premium quality, pathogen reduction, and custom cleaning plans.">
+    <title>Extreme Clean and Organization | Lake City, FL Cleaning Services</title>
+    <meta name="description" content="Discover professional residential cleaning and home organization solutions in Lake City, FL. Customized cleaning plans for a cleaner, fresher, more comfortable everyday.">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,14 +23,15 @@
                 extend: {
                     colors: {
                         navy: {
-                            800: '#0F2137',
-                            900: '#0B192C',
-                            950: '#070F1B',
+                            800: '#112240',
+                            900: '#0A192F',
+                            950: '#060D1A',
                         },
-                        teal: {
-                            400: '#00B4D8',
-                            500: '#06D6A0',
-                            600: '#05B386',
+                        turquoise: {
+                            400: '#38BDF8',
+                            500: '#00C2A8',
+                            600: '#00A38D',
+                            700: '#0D9488',
                         }
                     },
                     fontFamily: {
@@ -44,84 +45,121 @@
 
     <style>
         .glass-card {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(226, 232, 240, 0.8);
         }
         .glass-dark {
-            background: rgba(15, 33, 55, 0.85);
+            background: rgba(17, 34, 64, 0.85);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         .text-gradient {
-            background: linear-gradient(135deg, #06D6A0 0%, #00B4D8 100%);
+            background: linear-gradient(135deg, #00C2A8 0%, #38BDF8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         .bg-gradient-hero {
-            background: linear-gradient(135deg, #070F1B 0%, #0B192C 60%, #0F2137 100%);
+            background: linear-gradient(135deg, #060D1A 0%, #0A192F 60%, #112240 100%);
+        }
+        /* Custom Before/After Slider Styling */
+        .before-after-container {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+        }
+        .before-after-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .before-after-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            width: 50%;
+        }
+        .before-after-handle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background-color: #00C2A8;
+            cursor: ew-resize;
+            z-index: 20;
+            transform: translateX(-50%);
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-teal-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-turquoise-500 selection:text-white">
 
-    <!-- Top Demo Disclaimer Bar -->
+    <!-- Top Unofficial Concept Banner -->
     <div class="bg-amber-500 text-slate-950 font-medium text-xs md:text-sm py-2 px-4 text-center sticky top-0 z-50 shadow-sm flex items-center justify-center gap-2">
         <i data-lucide="info" class="w-4 h-4 flex-shrink-0"></i>
-        <span><strong>UNOFFICIAL DEMO CONCEPT</strong> &mdash; Created for US Environmental Cleaning and Disinfecting (137 W 81st St, NYC).</span>
+        <span><strong>UNOFFICIAL WEBSITE CONCEPT</strong> &mdash; Prepared as a design proposal for Extreme Clean and Organization (Lake City, FL).</span>
     </div>
 
     <!-- Sticky Navigation Bar -->
-    <header class="sticky top-[32px] md:top-[36px] z-40 bg-navy-900/90 backdrop-blur-md border-b border-white/10 text-white transition-all duration-300">
+    <header class="sticky top-[32px] md:top-[36px] z-40 bg-navy-900/95 backdrop-blur-md border-b border-white/10 text-white transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Brand Logo -->
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-teal-500 to-teal-400 flex items-center justify-center text-navy-950 font-bold shadow-lg shadow-teal-500/20 group-hover:scale-105 transition-transform">
-                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-turquoise-600 to-turquoise-400 flex items-center justify-center text-navy-950 font-bold shadow-lg shadow-turquoise-500/20 group-hover:scale-105 transition-transform">
+                    <i data-lucide="sparkles" class="w-6 h-6"></i>
                 </div>
                 <div class="flex flex-col">
-                    <span class="font-heading text-lg font-extrabold tracking-tight text-white leading-tight">US Environmental</span>
-                    <span class="text-xs text-teal-400 font-medium tracking-wider uppercase">Cleaning & Disinfecting</span>
+                    <span class="font-heading text-lg font-extrabold tracking-tight text-white leading-tight">Extreme Clean</span>
+                    <span class="text-xs text-turquoise-400 font-medium tracking-wider uppercase">&amp; Organization</span>
                 </div>
             </a>
 
             <!-- Desktop Navigation -->
             <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#services" class="hover:text-teal-400 transition-colors">Proposed Services</a>
-                <a href="#how-it-works" class="hover:text-teal-400 transition-colors">How It Works</a>
-                <a href="#why-us" class="hover:text-teal-400 transition-colors">Why Choose Us</a>
-                <a href="#location" class="hover:text-teal-400 transition-colors">NYC Location</a>
+                <a href="#services" class="hover:text-turquoise-400 transition-colors">Services</a>
+                <a href="#checklist" class="hover:text-turquoise-400 transition-colors">Checklist</a>
+                <a href="#transformation" class="hover:text-turquoise-400 transition-colors">Transformations</a>
+                <a href="#why-us" class="hover:text-turquoise-400 transition-colors">Why Choose Us</a>
+                <a href="#how-it-works" class="hover:text-turquoise-400 transition-colors">How It Works</a>
             </nav>
 
-            <!-- Actions -->
+            <!-- Action Buttons -->
             <div class="hidden sm:flex items-center gap-4">
-                <a href="tel:+13474848420" class="flex items-center gap-2 text-xs lg:text-sm font-semibold text-slate-200 hover:text-teal-400 px-3 py-2 rounded-lg transition-colors">
-                    <i data-lucide="phone-call" class="w-4 h-4 text-teal-400"></i>
-                    <span>+1 (347) 484-8420</span>
+                <a href="tel:+13863442335" class="flex items-center gap-2 text-xs lg:text-sm font-semibold text-slate-200 hover:text-turquoise-400 px-3 py-2 rounded-lg transition-colors">
+                    <i data-lucide="phone-call" class="w-4 h-4 text-turquoise-400"></i>
+                    <span>(386) 344-2335</span>
                 </a>
-                <a href="#quote-calculator" class="bg-teal-500 hover:bg-teal-400 text-navy-950 font-semibold text-xs lg:text-sm px-4 py-2.5 rounded-xl shadow-lg shadow-teal-500/20 transition-all transform hover:-translate-y-0.5">
-                    Request Quote
+                <a href="#estimate" class="bg-turquoise-500 hover:bg-turquoise-400 text-navy-950 font-semibold text-xs lg:text-sm px-4 py-2.5 rounded-xl shadow-lg shadow-turquoise-500/20 transition-all transform hover:-translate-y-0.5">
+                    Request an Estimate
                 </a>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none" aria-label="Toggle menu">
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-navy-800 focus:outline-none" aria-label="Toggle Navigation Menu">
                 <i data-lucide="menu" class="w-6 h-6"></i>
             </button>
         </div>
 
-        <!-- Mobile Drawer Menu -->
+        <!-- Mobile Drawer Navigation -->
         <div id="mobile-drawer" class="hidden lg:hidden bg-navy-950 border-b border-white/10 px-4 pt-2 pb-6 space-y-4">
-            <a href="#services" class="block py-2 text-slate-300 hover:text-teal-400 font-medium border-b border-slate-800">Proposed Services</a>
-            <a href="#how-it-works" class="block py-2 text-slate-300 hover:text-teal-400 font-medium border-b border-slate-800">How It Works</a>
-            <a href="#why-us" class="block py-2 text-slate-300 hover:text-teal-400 font-medium border-b border-slate-800">Why Choose Us</a>
-            <a href="#location" class="block py-2 text-slate-300 hover:text-teal-400 font-medium border-b border-slate-800">NYC Location</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-turquoise-400 font-medium border-b border-slate-800">Proposed Services</a>
+            <a href="#checklist" class="block py-2 text-slate-300 hover:text-turquoise-400 font-medium border-b border-slate-800">Cleaning Checklist</a>
+            <a href="#transformation" class="block py-2 text-slate-300 hover:text-turquoise-400 font-medium border-b border-slate-800">Space Transformation</a>
+            <a href="#why-us" class="block py-2 text-slate-300 hover:text-turquoise-400 font-medium border-b border-slate-800">Why Choose Us</a>
+            <a href="#how-it-works" class="block py-2 text-slate-300 hover:text-turquoise-400 font-medium border-b border-slate-800">How It Works</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-turquoise-400 font-medium border-b border-slate-800">Contact &amp; Location</a>
             <div class="pt-2 flex flex-col gap-3">
-                <a href="tel:+13474848420" class="flex items-center justify-center gap-2 py-3 rounded-xl bg-navy-800 text-teal-400 font-semibold text-sm border border-slate-700">
-                    <i data-lucide="phone-call" class="w-4 h-4"></i> Call +1 (347) 484-8420
+                <a href="tel:+13863442335" class="flex items-center justify-center gap-2 py-3 rounded-xl bg-navy-800 text-turquoise-400 font-semibold text-sm border border-slate-700">
+                    <i data-lucide="phone-call" class="w-4 h-4"></i> Call (386) 344-2335
                 </a>
-                <a href="#quote-calculator" class="block text-center py-3 rounded-xl bg-teal-500 text-navy-950 font-bold text-sm shadow-md">
-                    Request a Custom Quote
+                <a href="#estimate" class="block text-center py-3 rounded-xl bg-turquoise-500 text-navy-950 font-bold text-sm shadow-md">
+                    Request an Estimate
                 </a>
             </div>
         </div>
@@ -130,78 +168,72 @@
     <!-- Hero Section -->
     <section class="relative bg-gradient-hero text-white pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
         <!-- Background Ambient Glow -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-teal-500/10 blur-[140px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-turquoise-500/10 blur-[140px] rounded-full pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                 
-                <!-- Left Hero Text -->
+                <!-- Hero Content -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     
-                    <!-- Rating Badge -->
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800/80 border border-teal-500/30 text-xs font-semibold text-teal-300 shadow-inner">
-                        <div class="flex text-amber-400">
-                            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5 fill-amber-400"></i>
-                        </div>
-                        <span>5.0 Google Rating (2 Public Reviews)</span>
+                    <!-- Location Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy-800/80 border border-turquoise-500/30 text-xs font-semibold text-turquoise-300 shadow-inner">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-turquoise-400"></i>
+                        <span>Lake City, FL &amp; Surrounding Areas</span>
                     </div>
 
                     <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                        Professional Cleaning. <br class="hidden sm:inline" />
-                        <span class="text-gradient">A Healthier Environment.</span>
+                        A Cleaner Space. <br class="hidden sm:inline" />
+                        <span class="text-gradient">A Better Everyday.</span>
                     </h1>
 
                     <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Explore professional cleaning and disinfection solutions for commercial and other specialized spaces across New York City.
+                        Discover professional cleaning and organization solutions designed to help create fresher, more comfortable, and beautifully ordered spaces for home and work.
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#quote-calculator" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-400 text-navy-950 font-bold px-7 py-4 rounded-xl shadow-xl shadow-teal-500/25 transition-all transform hover:-translate-y-0.5">
-                            <span>Request a Quote</span>
+                        <a href="#estimate" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-turquoise-500 hover:bg-turquoise-400 text-navy-950 font-bold px-7 py-4 rounded-xl shadow-xl shadow-turquoise-500/20 transition-all transform hover:-translate-y-0.5">
+                            <span>Request an Estimate</span>
                             <i data-lucide="arrow-right" class="w-5 h-5"></i>
                         </a>
-                        <a href="tel:+13474848420" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-navy-800/80 hover:bg-navy-800 text-white font-semibold px-7 py-4 rounded-xl border border-slate-700 hover:border-slate-500 transition-all">
-                            <i data-lucide="phone" class="w-5 h-5 text-teal-400"></i>
+                        <a href="tel:+13863442335" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-navy-800/80 hover:bg-navy-800 text-white font-semibold px-7 py-4 rounded-xl border border-slate-700 hover:border-slate-500 transition-all">
+                            <i data-lucide="phone" class="w-5 h-5 text-turquoise-400"></i>
                             <span>Call Our Team</span>
                         </a>
                     </div>
 
-                    <!-- Trust Micro-Badges -->
+                    <!-- Highlight Badges -->
                     <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
                         <div class="space-y-1">
+                            <p class="text-xs text-slate-400 uppercase font-semibold">Service Focus</p>
+                            <p class="text-xs sm:text-sm font-semibold text-slate-200">Cleaning &amp; Organization</p>
+                        </div>
+                        <div class="space-y-1">
                             <p class="text-xs text-slate-400 uppercase font-semibold">Location</p>
-                            <p class="text-xs sm:text-sm font-semibold text-slate-200">Manhattan, NYC</p>
+                            <p class="text-xs sm:text-sm font-semibold text-slate-200">Lake City, Florida</p>
                         </div>
                         <div class="space-y-1">
-                            <p class="text-xs text-slate-400 uppercase font-semibold">Availability</p>
-                            <p class="text-xs sm:text-sm font-semibold text-slate-200">24-Hour Listing</p>
-                        </div>
-                        <div class="space-y-1">
-                            <p class="text-xs text-slate-400 uppercase font-semibold">Focus</p>
-                            <p class="text-xs sm:text-sm font-semibold text-slate-200">Commercial & Facilities</p>
+                            <p class="text-xs text-slate-400 uppercase font-semibold">Approach</p>
+                            <p class="text-xs sm:text-sm font-semibold text-slate-200">Tailored Plans</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Feature Image / Visual Card -->
+                <!-- Hero Imagery Card -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
-                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800" alt="Professional Facility Disinfection" class="w-full h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/30 to-transparent"></div>
+                        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800" alt="Clean and Organized Home Interior" class="w-full h-[440px] object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/20 to-transparent"></div>
                         
-                        <!-- Floating Glass Info Badge -->
+                        <!-- Floating Info Card -->
                         <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-dark border border-white/10">
                             <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center flex-shrink-0">
-                                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                                <div class="w-10 h-10 rounded-lg bg-turquoise-500/20 text-turquoise-400 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="check-circle-2" class="w-5 h-5"></i>
                                 </div>
                                 <div>
-                                    <h2 class="text-sm font-bold text-white">Facility Disinfection & Hygiene</h2>
-                                    <p class="text-xs text-slate-300">Custom tailored solutions for corporate, medical, & educational spaces.</p>
+                                    <h2 class="text-sm font-bold text-white">Thoughtful Space Organization</h2>
+                                    <p class="text-xs text-slate-300">Detailed cleaning combined with smart decluttering systems.</p>
                                 </div>
                             </div>
                         </div>
@@ -212,130 +244,371 @@
         </div>
     </section>
 
-    <!-- Proposed Services Section -->
+    <!-- Proposed Services Showcase -->
     <section id="services" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             <div class="text-center max-w-3xl mx-auto space-y-3">
-                <span class="text-xs font-bold tracking-widest text-teal-600 uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Proposed Solutions</span>
-                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">Tailored Cleaning Categories</h2>
+                <span class="text-xs font-bold tracking-widest text-turquoise-700 uppercase bg-turquoise-50 px-3 py-1 rounded-full border border-turquoise-200">Suggested Service Categories</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">Tailored Cleaning &amp; Organization Solutions</h2>
                 <p class="text-slate-600 text-sm sm:text-base">
-                    These service offerings represent proposed categories for commercial clients in New York City.
+                    Explore suggested service options designed for homes, kitchens, move transitions, and specialized organization needs in Lake City.
                 </p>
                 <div class="text-xs text-slate-500 italic bg-amber-50 text-amber-800 py-1.5 px-4 rounded-lg inline-block border border-amber-200 mt-2">
-                    <i data-lucide="alert-circle" class="w-3.5 h-3.5 inline mr-1"></i> Note: Proposed services subject to final owner confirmation.
+                    <i data-lucide="alert-circle" class="w-3.5 h-3.5 inline mr-1"></i> Note: Proposed categories subject to final business owner confirmation.
                 </div>
             </div>
 
             <!-- Service Filter Tabs -->
             <div class="flex justify-center flex-wrap gap-2 mt-8 mb-10">
-                <button onclick="filterServices('all')" class="service-tab active px-4 py-2 rounded-lg text-sm font-medium bg-navy-900 text-white shadow-sm transition-all">All Services</button>
-                <button onclick="filterServices('commercial')" class="service-tab px-4 py-2 rounded-lg text-sm font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">Commercial</button>
-                <button onclick="filterServices('disinfection')" class="service-tab px-4 py-2 rounded-lg text-sm font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">Disinfection</button>
+                <button onclick="filterServices('all', this)" class="service-tab px-4 py-2 rounded-lg text-sm font-medium bg-navy-900 text-white shadow-sm transition-all">All Categories</button>
+                <button onclick="filterServices('cleaning', this)" class="service-tab px-4 py-2 rounded-lg text-sm font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">Cleaning Services</button>
+                <button onclick="filterServices('organization', this)" class="service-tab px-4 py-2 rounded-lg text-sm font-medium bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition-all">Organization</button>
             </div>
 
             <!-- Services Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Service 1 -->
-                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="commercial">
+                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="cleaning">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5">
-                            <i data-lucide="building-2" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center mb-5">
+                            <i data-lucide="home" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-navy-900 mb-2">Commercial Cleaning</h3>
+                        <h3 class="text-xl font-bold text-navy-900 mb-2">Residential Cleaning</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Comprehensive recurring maintenance and detailed janitorial care for multi-floor corporate offices, retail spaces, and institutions.
+                            Consistent routine cleaning for living rooms, bedrooms, and common areas. Keeps your home fresh and comfortable week after week.
                         </p>
                     </div>
-                    <button onclick="openModal('Commercial Cleaning', 'Full-spectrum office and corporate cleaning services designed to maintain a spotless, professional environment for staff and guests. Includes surface dusting, waste management, floor care, and restroom sanitation.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-teal-600 hover:text-teal-700 group mt-2">
-                        <span>Learn Details</span>
+                    <button onclick="openModal('Residential Cleaning', 'Our proposed residential cleaning service focuses on maintaining a healthy, dust-free home environment. Includes dusting, floor vacuuming and mopping, trash removal, and surface wiping across key living spaces.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-turquoise-600 hover:text-turquoise-700 group mt-2">
+                        <span>View Included Details</span>
                         <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                     </button>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="disinfection">
+                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="cleaning">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5">
-                            <i data-lucide="shield-virus" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center mb-5">
+                            <i data-lucide="sparkles" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-navy-900 mb-2">Facility Disinfection</h3>
+                        <h3 class="text-xl font-bold text-navy-900 mb-2">Deep Cleaning</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            High-touch point pathogen reduction and hospital-grade misting or electrostatic treatment for dense commercial facilities.
+                            Intensive top-to-bottom detail cleaning for built-up grime, baseboards, vents, appliance exteriors, and hard-to-reach areas.
                         </p>
                     </div>
-                    <button onclick="openModal('Facility Disinfection', 'Targeted disinfection protocols specifically formulated for high-traffic facilities. We focus on neutralising airborne and surface-bound pathogens using eco-friendly, EPA-certified solutions.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-teal-600 hover:text-teal-700 group mt-2">
-                        <span>Learn Details</span>
+                    <button onclick="openModal('Deep Cleaning', 'A thorough, detail-oriented cleaning package designed to refresh homes that need extra attention. Focuses on deep baseboard cleaning, light fixtures, cabinet exteriors, grout scrubbing, and detailed dust removal.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-turquoise-600 hover:text-turquoise-700 group mt-2">
+                        <span>View Included Details</span>
                         <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                     </button>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="commercial">
+                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="organization">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5">
-                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center mb-5">
+                            <i data-lucide="layout-grid" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-navy-900 mb-2">Workplace Cleaning</h3>
+                        <h3 class="text-xl font-bold text-navy-900 mb-2">Home Organization</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Scheduled desk, partition, breakroom, and communal space upkeep optimized to prevent disruptions to your operating schedule.
+                            Systematic decluttering and spatial arrangement for closets, pantries, garages, and storage areas to streamline daily routines.
                         </p>
                     </div>
-                    <button onclick="openModal('Workplace Cleaning', 'Daytime or after-hours janitorial upkeep focused on employee workstation hygiene, shared conference areas, kitchen spaces, and high-frequency touch zones.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-teal-600 hover:text-teal-700 group mt-2">
-                        <span>Learn Details</span>
+                    <button onclick="openModal('Home Organization', 'Transform chaotic spaces into functional, ordered areas. We assist with sorting, categorization, container placement, and establishing manageable organization systems for pantries and closets.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-turquoise-600 hover:text-turquoise-700 group mt-2">
+                        <span>View Included Details</span>
                         <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                     </button>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="disinfection">
+                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="cleaning">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5">
-                            <i data-lucide="sparkles" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center mb-5">
+                            <i data-lucide="bath" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-navy-900 mb-2">Sanitizing Services</h3>
+                        <h3 class="text-xl font-bold text-navy-900 mb-2">Kitchen &amp; Bathroom Cleaning</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Eco-conscious sanitization treatments formulated for lobbies, elevators, waiting areas, and specialized customer touchpoints.
+                            Focused sanitization for high-use wet areas. Deep scrubbing of sinks, countertops, stovetops, showers, toilets, and tiles.
                         </p>
                     </div>
-                    <button onclick="openModal('Sanitizing Services', 'Deep sanitization designed for public-facing sectors. Utilizing non-toxic, eco-conscious cleaning agents to protect both indoor air quality and visitor health.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-teal-600 hover:text-teal-700 group mt-2">
-                        <span>Learn Details</span>
+                    <button onclick="openModal('Kitchen & Bathroom Cleaning', 'Dedicated focus on the two most demanding areas of the house. Includes stovetop degreasing, microwave cleaning, sink disinfection, shower tile scrubbing, fixture polishing, and toilet sanitization.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-turquoise-600 hover:text-turquoise-700 group mt-2">
+                        <span>View Included Details</span>
                         <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                     </button>
                 </div>
 
                 <!-- Service 5 -->
-                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="commercial">
+                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="cleaning">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5">
-                            <i data-lucide="sliders" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center mb-5">
+                            <i data-lucide="truck" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-navy-900 mb-2">Custom Cleaning Plans</h3>
+                        <h3 class="text-xl font-bold text-navy-900 mb-2">Move-In / Move-Out Cleaning</h3>
                         <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Bespoke schedules (daily, weekly, after-hours) customized to match your building’s unique foot-traffic and square footage needs.
+                            Comprehensive cleanouts for vacant homes and apartments prior to moving in or handing over keys to landlords or buyers.
                         </p>
                     </div>
-                    <button onclick="openModal('Custom Cleaning Plans', 'Every building is unique. We tailor our cleaning checklist, frequency, and deployment hours around your specific facility requirements and budget constraints.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-teal-600 hover:text-teal-700 group mt-2">
-                        <span>Learn Details</span>
+                    <button onclick="openModal('Move-In / Move-Out Cleaning', 'Ensure a fresh start for new occupants or prepare your property for security deposit return. Includes inside-cabinet cleaning, appliance interior wiping, baseboards, and deep floor sanitization.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-turquoise-600 hover:text-turquoise-700 group mt-2">
+                        <span>View Included Details</span>
                         <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                     </button>
                 </div>
 
-                <!-- Custom Request CTA Card -->
-                <div class="bg-gradient-to-br from-navy-900 to-navy-800 text-white rounded-2xl p-6 shadow-md flex flex-col justify-between border border-slate-700">
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all border border-slate-200/80 flex flex-col justify-between" data-category="organization">
                     <div>
-                        <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center mb-5">
-                            <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                        <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center mb-5">
+                            <i data-lucide="sliders" class="w-6 h-6"></i>
                         </div>
-                        <h3 class="text-xl font-bold mb-2">Need a Specific Solution?</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
-                            Contact our NYC team to discuss custom scope requirements or specialized property cleaning specs.
+                        <h3 class="text-xl font-bold text-navy-900 mb-2">Customized Cleaning Plans</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Flexible checklists tailored to your specific household priorities, scheduling preferences, and budget constraints.
                         </p>
                     </div>
-                    <a href="#quote-calculator" class="w-full text-center py-3 rounded-xl bg-teal-500 hover:bg-teal-400 text-navy-950 font-bold text-sm shadow-md transition-colors">
-                        Build Custom Plan
-                    </a>
+                    <button onclick="openModal('Customized Cleaning Plans', 'Combine cleaning and organization tasks into a custom service package. Select specific rooms, tasks, and visit frequencies that align perfectly with your household routine.')" class="inline-flex items-center gap-1.5 text-sm font-bold text-turquoise-600 hover:text-turquoise-700 group mt-2">
+                        <span>View Included Details</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Cleaning Checklist Drawer Viewer -->
+    <section id="checklist" class="py-20 bg-white border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <span class="text-xs font-bold tracking-widest text-turquoise-700 uppercase bg-turquoise-50 px-3 py-1 rounded-full border border-turquoise-200">Transparent Standards</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">Interactive Task Checklist</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Explore the step-by-step tasks included across our suggested cleaning packages.</p>
+            </div>
+
+            <!-- Checklist Tabs -->
+            <div class="flex justify-center border-b border-slate-200 mb-8 overflow-x-auto">
+                <button onclick="switchChecklistTab('standard', this)" class="checklist-tab px-6 py-3 text-sm font-bold text-turquoise-600 border-b-2 border-turquoise-500 flex items-center gap-2 whitespace-nowrap">
+                    <i data-lucide="check-square" class="w-4 h-4"></i> Standard Clean
+                </button>
+                <button onclick="switchChecklistTab('deep', this)" class="checklist-tab px-6 py-3 text-sm font-bold text-slate-500 border-b-2 border-transparent hover:text-slate-800 flex items-center gap-2 whitespace-nowrap">
+                    <i data-lucide="sparkle" class="w-4 h-4"></i> Deep Clean
+                </button>
+                <button onclick="switchChecklistTab('moveinout', this)" class="checklist-tab px-6 py-3 text-sm font-bold text-slate-500 border-b-2 border-transparent hover:text-slate-800 flex items-center gap-2 whitespace-nowrap">
+                    <i data-lucide="box" class="w-4 h-4"></i> Move-In / Move-Out
+                </button>
+            </div>
+
+            <!-- Checklist Content Panes -->
+            <div id="checklist-container" class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200">
+                
+                <!-- Standard Pane -->
+                <div id="checklist-standard" class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="armchair" class="w-4 h-4 text-turquoise-600"></i> Living Rooms &amp; Bedrooms
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Dust accessible surfaces &amp; tables</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Vacuum carpets &amp; rug areas</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Sweep &amp; mop hard flooring</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Empty waste receptacles</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="utensils" class="w-4 h-4 text-turquoise-600"></i> Kitchen Areas
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Wipe exterior countertops &amp; sink</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Clean stovetop surface</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Wipe exterior appliance doors</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Clean microwave interior</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="bath" class="w-4 h-4 text-turquoise-600"></i> Bathrooms
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Sanitize sinks, faucets &amp; counters</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Scrub &amp; rinse toilets thoroughly</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Clean mirror surfaces</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Mop tile flooring</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Deep Clean Pane -->
+                <div id="checklist-deep" class="hidden grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="sparkles" class="w-4 h-4 text-turquoise-600"></i> Detailed Dusting
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Everything in Standard Clean</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Hand-wipe baseboards &amp; trim</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Dust ceiling fan blades</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Wipe door frames &amp; handles</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="flame" class="w-4 h-4 text-turquoise-600"></i> Deep Kitchen Focus
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Scrub cabinet exterior faces</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Scrub stovetop &amp; range hood</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Degrease backsplash tile</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Polish stainless steel fixtures</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="droplet" class="w-4 h-4 text-turquoise-600"></i> Deep Bathroom Scrub
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Scrub shower grout &amp; tile walls</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Remove soap scum buildup</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Detail clean medicine cabinet exterior</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Sanitize trash bin containers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Move In/Out Pane -->
+                <div id="checklist-moveinout" class="hidden grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="box" class="w-4 h-4 text-turquoise-600"></i> Empty Property Care
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Deep floor vacuum &amp; mopping</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Clean inside closets &amp; shelving</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Wipe down light switches &amp; outlets</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="archive" class="w-4 h-4 text-turquoise-600"></i> Cabinet &amp; Drawers
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Vacuum inside empty drawers</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Wipe inside kitchen cabinets</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Wipe vanity interior shelving</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="text-sm font-bold text-navy-900 flex items-center gap-2">
+                            <i data-lucide="refrigerator" class="w-4 h-4 text-turquoise-600"></i> Appliance Interfacing
+                        </h3>
+                        <ul class="text-xs text-slate-600 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Oven interior deep clean</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Refrigerator interior sanitization</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500"></i> Dishwasher exterior &amp; rim wiped</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Before & After Transformation Showcase -->
+    <section id="transformation" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                <span class="text-xs font-bold tracking-widest text-turquoise-400 uppercase bg-navy-800 px-3 py-1 rounded-full border border-turquoise-500/30">Visual Results</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Space Transformation Preview</h2>
+                <p class="text-slate-300 text-sm sm:text-base">
+                    Drag the slider to see how thoughtful cleaning and structured organization revitalize home environments.
+                </p>
+            </div>
+
+            <!-- Before/After Interactive Slider Wrapper -->
+            <div class="max-w-4xl mx-auto">
+                <div id="ba-slider" class="before-after-container rounded-2xl h-[340px] sm:h-[460px] shadow-2xl border border-white/10">
+                    
+                    <!-- After Image (Base) -->
+                    <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80&w=1200" alt="Organized Clean Kitchen After" class="before-after-img">
+                    <span class="absolute bottom-4 right-4 bg-navy-950/80 text-turquoise-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-turquoise-500/30 z-10">AFTER ORGANIZED</span>
+
+                    <!-- Before Image (Overlay Container) -->
+                    <div id="ba-overlay" class="before-after-overlay">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200" alt="Kitchen Before Cleaning" class="before-after-img max-w-none w-[800px] sm:w-[1152px]">
+                        <span class="absolute bottom-4 left-4 bg-navy-950/80 text-amber-400 text-xs font-bold px-3 py-1.5 rounded-lg border border-amber-500/30 z-10">BEFORE CLEANING</span>
+                    </div>
+
+                    <!-- Draggable Handle Bar -->
+                    <div id="ba-handle" class="before-after-handle flex items-center justify-center">
+                        <div class="w-8 h-8 rounded-full bg-turquoise-500 text-navy-950 flex items-center justify-center shadow-lg font-bold text-xs">
+                            <i data-lucide="chevrons-left-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="text-center text-xs text-slate-400 mt-3">
+                    <i data-lucide="hand" class="w-3.5 h-3.5 inline mr-1"></i> Drag or click left/right across the image to compare.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                <span class="text-xs font-bold tracking-widest text-turquoise-700 uppercase bg-turquoise-50 px-3 py-1 rounded-full border border-turquoise-200">Our Core Pillars</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">Why Choose Extreme Clean</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Designed around dependability, attentive service, and respect for your home environment.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Pillar 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 space-y-3 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center">
+                        <i data-lucide="search" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900">Attention to Detail</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Thorough focus on corners, high-touch points, and often-overlooked spaces for a truly refreshed feel.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 space-y-3 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center">
+                        <i data-lucide="layout-list" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900">Tailored Organization</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Custom arrangement systems designed to fit your family’s daily routine rather than rigid templates.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 space-y-3 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center">
+                        <i data-lucide="message-square" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900">Clear Communication</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Direct dialogue regarding timing, specific home priorities, and responsive service scheduling.
+                    </p>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 space-y-3 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-navy-900">Flexible Scheduling</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        Service intervals and visit times customized to minimize disruptions to your personal or work calendar.
+                    </p>
                 </div>
 
             </div>
@@ -346,54 +619,43 @@
     <section id="how-it-works" class="py-20 bg-white border-y border-slate-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-                <span class="text-xs font-bold tracking-widest text-teal-600 uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Step-by-Step Excellence</span>
-                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">How Our Process Works</h2>
-                <p class="text-slate-600 text-sm sm:text-base">Streamlined steps designed for seamless onboarding and reliable service execution.</p>
+                <span class="text-xs font-bold tracking-widest text-turquoise-700 uppercase bg-turquoise-50 px-3 py-1 rounded-full border border-turquoise-200">Simple Process</span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">How It Works</h2>
+                <p class="text-slate-600 text-sm sm:text-base">Three straightforward steps to organize and refresh your property.</p>
             </div>
 
-            <div class="grid md:grid-cols-4 gap-8 relative">
+            <div class="grid md:grid-cols-3 gap-8 relative">
                 
                 <!-- Step 1 -->
                 <div class="relative flex flex-col items-center text-center space-y-4">
-                    <div class="w-16 h-16 rounded-2xl bg-navy-900 text-teal-400 font-heading font-extrabold text-xl flex items-center justify-center shadow-lg shadow-navy-900/10">
+                    <div class="w-16 h-16 rounded-2xl bg-navy-900 text-turquoise-400 font-heading font-extrabold text-xl flex items-center justify-center shadow-lg shadow-navy-900/10">
                         01
                     </div>
-                    <h3 class="text-lg font-bold text-navy-900">Initial Consultation</h3>
+                    <h3 class="text-xl font-bold text-navy-900">Tell Us Your Needs</h3>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        We review your property layout, square footage, and key hygiene priorities.
+                        Share details about your property type, square footage, and specific cleaning or decluttering priorities.
                     </p>
                 </div>
 
                 <!-- Step 2 -->
                 <div class="relative flex flex-col items-center text-center space-y-4">
-                    <div class="w-16 h-16 rounded-2xl bg-navy-900 text-teal-400 font-heading font-extrabold text-xl flex items-center justify-center shadow-lg shadow-navy-900/10">
+                    <div class="w-16 h-16 rounded-2xl bg-navy-900 text-turquoise-400 font-heading font-extrabold text-xl flex items-center justify-center shadow-lg shadow-navy-900/10">
                         02
                     </div>
-                    <h3 class="text-lg font-bold text-navy-900">Customized Plan</h3>
+                    <h3 class="text-xl font-bold text-navy-900">Discuss Estimate &amp; Service</h3>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        Receive a tailored service checklist, estimated timeline, and competitive quote.
+                        Review estimated cost ranges and select a customized cleaning checklist that fits your budget.
                     </p>
                 </div>
 
                 <!-- Step 3 -->
                 <div class="relative flex flex-col items-center text-center space-y-4">
-                    <div class="w-16 h-16 rounded-2xl bg-navy-900 text-teal-400 font-heading font-extrabold text-xl flex items-center justify-center shadow-lg shadow-navy-900/10">
+                    <div class="w-16 h-16 rounded-2xl bg-navy-900 text-turquoise-400 font-heading font-extrabold text-xl flex items-center justify-center shadow-lg shadow-navy-900/10">
                         03
                     </div>
-                    <h3 class="text-lg font-bold text-navy-900">Professional Execution</h3>
+                    <h3 class="text-xl font-bold text-navy-900">Confirm &amp; Schedule</h3>
                     <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        Trained staff execute deep cleaning and disinfection according to agreed standards.
-                    </p>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="relative flex flex-col items-center text-center space-y-4">
-                    <div class="w-16 h-16 rounded-2xl bg-navy-900 text-teal-400 font-heading font-extrabold text-xl flex items-center justify-center shadow-lg shadow-navy-900/10">
-                        04
-                    </div>
-                    <h3 class="text-lg font-bold text-navy-900">Quality Assurance</h3>
-                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                        Ongoing inspections and open communications guarantee consistent quality care.
+                        Finalize your appointment time directly with the business team and enjoy a renewed home environment.
                     </p>
                 </div>
 
@@ -401,178 +663,112 @@
         </div>
     </section>
 
-    <!-- Why Professional Cleaning Matters -->
-    <section id="why-us" class="py-20 bg-navy-950 text-white relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
-                <span class="text-xs font-bold tracking-widest text-teal-400 uppercase bg-navy-900 px-3 py-1 rounded-full border border-teal-500/30">Value & Health Impact</span>
-                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Why Professional Cleaning Matters</h2>
-                <p class="text-slate-300 text-sm sm:text-base">Investing in commercial environment hygiene directly impacts employee wellness and brand reputation.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- Benefit 1 -->
-                <div class="glass-dark p-6 rounded-2xl border border-white/10 hover:border-teal-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center mb-4">
-                        <i data-lucide="heart-pulse" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Healthier Workplaces</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        Regular surface sanitation reduces sick leave occurrences and supports overall employee well-being.
-                    </p>
-                </div>
-
-                <!-- Benefit 2 -->
-                <div class="glass-dark p-6 rounded-2xl border border-white/10 hover:border-teal-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center mb-4">
-                        <i data-lucide="virus" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Pathogen Reduction</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        Specialized disinfection targets high-risk germ vectors across door handles, desks, and shared spaces.
-                    </p>
-                </div>
-
-                <!-- Benefit 3 -->
-                <div class="glass-dark p-6 rounded-2xl border border-white/10 hover:border-teal-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center mb-4">
-                        <i data-lucide="wind" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Enhanced Air Quality</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        Thorough dust and allergen removal improves indoor air conditions across commercial properties.
-                    </p>
-                </div>
-
-                <!-- Benefit 4 -->
-                <div class="glass-dark p-6 rounded-2xl border border-white/10 hover:border-teal-500/50 transition-all">
-                    <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center mb-4">
-                        <i data-lucide="award" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2">Professional Image</h3>
-                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        A pristine facility projects professionalism, inspiring confidence in visiting clients and stakeholders.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Instant Quote Calculator & Form -->
-    <section id="quote-calculator" class="py-20 bg-slate-100">
+    <!-- Estimate Request Form with Dynamic Budget Estimator -->
+    <section id="estimate" class="py-20 bg-slate-100">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-white rounded-3xl shadow-xl border border-slate-200 overflow-hidden">
                 
                 <div class="bg-navy-900 text-white p-8 sm:p-10 text-center relative">
-                    <span class="text-xs font-bold tracking-widest text-teal-400 uppercase bg-navy-800 px-3 py-1 rounded-full border border-teal-500/30">Interactive Estimator</span>
-                    <h2 class="font-heading text-2xl sm:text-3xl font-extrabold mt-3">Request a Custom Cleaning Quote</h2>
+                    <span class="text-xs font-bold tracking-widest text-turquoise-400 uppercase bg-navy-800 px-3 py-1 rounded-full border border-turquoise-500/30">Estimate Request</span>
+                    <h2 class="font-heading text-2xl sm:text-3xl font-extrabold mt-3">Request a Custom Service Estimate</h2>
                     <p class="text-slate-300 text-sm mt-2 max-w-xl mx-auto">
-                        Fill in your property specs below to view an instant estimate and submit your service inquiry.
+                        Fill in your property specifications below to calculate an estimated range and submit your inquiry directly.
                     </p>
                 </div>
 
-                <form id="quote-form" class="p-6 sm:p-10 space-y-8" onsubmit="handleQuoteSubmit(event)">
+                <form id="estimate-form" class="p-6 sm:p-10 space-y-8" onsubmit="handleFormSubmit(event)">
                     
-                    <!-- Dynamic Calculator Section -->
+                    <!-- Dynamic Estimator Block -->
                     <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-6">
                         <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="calculator" class="w-4 h-4 text-teal-600"></i> Step 1: Property Estimator
+                            <i data-lucide="calculator" class="w-4 h-4 text-turquoise-600"></i> Step 1: Instant Estimate Calculator
                         </h3>
                         
                         <div class="grid md:grid-cols-3 gap-6">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-2">Property Type</label>
-                                <select id="calc-property" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none" onchange="calculateEstimate()">
-                                    <option value="office">Corporate Office</option>
-                                    <option value="retail">Retail Store</option>
-                                    <option value="healthcare">Healthcare / Clinic</option>
-                                    <option value="facility">Commercial Facility</option>
-                                    <option value="other">Other Commercial Space</option>
+                                <label for="calc-prop" class="block text-xs font-semibold text-slate-700 mb-2">Property Type</label>
+                                <select id="calc-prop" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none" onchange="calculateEstimate()">
+                                    <option value="single">Single Family Home</option>
+                                    <option value="apartment">Apartment / Condo</option>
+                                    <option value="office">Small Office Space</option>
+                                    <option value="other">Other Space</option>
                                 </select>
                             </div>
 
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-2">Approx. Area (Sq. Ft.)</label>
-                                <input type="number" id="calc-sqft" value="2500" min="500" max="50000" step="500" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none" oninput="calculateEstimate()">
+                                <label for="calc-sqft" class="block text-xs font-semibold text-slate-700 mb-2">Approx. Area (Sq. Ft.)</label>
+                                <input type="number" id="calc-sqft" value="1800" min="400" max="10000" step="200" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none" oninput="calculateEstimate()">
                             </div>
 
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-2">Service Frequency</label>
-                                <select id="calc-frequency" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none" onchange="calculateEstimate()">
-                                    <option value="daily">Daily Maintenance</option>
-                                    <option value="weekly" selected>Weekly Cleaning</option>
-                                    <option value="biweekly">Bi-Weekly Cleaning</option>
-                                    <option value="onetime">One-Time Deep Clean</option>
+                                <label for="calc-type" class="block text-xs font-semibold text-slate-700 mb-2">Requested Service</label>
+                                <select id="calc-type" class="w-full bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none" onchange="calculateEstimate()">
+                                    <option value="standard">Residential Cleaning</option>
+                                    <option value="deep" selected>Deep Cleaning</option>
+                                    <option value="organization">Home Organization</option>
+                                    <option value="move">Move-In / Move-Out</option>
                                 </select>
                             </div>
                         </div>
 
-                        <!-- Estimate Display Output -->
+                        <!-- Estimate Display Banner -->
                         <div class="bg-navy-900 text-white rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4 border border-slate-800">
                             <div>
                                 <span class="text-xs text-slate-400 block">Estimated Service Range:</span>
-                                <span id="estimate-price" class="text-2xl font-extrabold text-teal-400">$250 - $350 / visit</span>
+                                <span id="estimate-price" class="text-2xl font-extrabold text-turquoise-400">$180 - $240</span>
                             </div>
                             <span class="text-xs text-slate-400 max-w-xs text-center sm:text-right">
-                                *Estimate generated for demonstration. Final price verified upon site review.
+                                *Estimate provided for proposal demonstration. Final pricing depends on property condition.
                             </span>
                         </div>
                     </div>
 
-                    <!-- Contact Info Inputs -->
+                    <!-- Contact Details Form Inputs -->
                     <div class="space-y-6">
                         <h3 class="text-sm font-bold text-navy-900 uppercase tracking-wider flex items-center gap-2">
-                            <i data-lucide="user" class="w-4 h-4 text-teal-600"></i> Step 2: Contact Details
+                            <i data-lucide="user" class="w-4 h-4 text-turquoise-600"></i> Step 2: Contact Information
                         </h3>
 
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
-                                <input type="text" id="form-name" required placeholder="John Doe" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none">
+                                <label for="form-name" class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
+                                <input type="text" id="form-name" required placeholder="Jane Doe" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
-                                <input type="email" id="form-email" required placeholder="john@company.com" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none">
+                                <label for="form-phone" class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+                                <input type="tel" id="form-phone" required placeholder="(386) 555-0199" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none">
                             </div>
                         </div>
 
                         <div class="grid sm:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
-                                <input type="tel" id="form-phone" required placeholder="+1 (212) 555-0199" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none">
+                                <label for="form-email" class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                                <input type="email" id="form-email" required placeholder="jane@example.com" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none">
                             </div>
                             <div>
-                                <label class="block text-xs font-semibold text-slate-700 mb-1">Requested Service *</label>
-                                <select id="form-service" required class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none">
-                                    <option value="commercial">Commercial Cleaning</option>
-                                    <option value="disinfection">Facility Disinfection</option>
-                                    <option value="workplace">Workplace Cleaning</option>
-                                    <option value="sanitizing">Sanitizing Services</option>
-                                    <option value="custom">Custom Plan</option>
-                                </select>
+                                <label for="form-date" class="block text-xs font-semibold text-slate-700 mb-1">Preferred Target Date</label>
+                                <input type="date" id="form-date" class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none">
                             </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Additional Message or Property Specs</label>
-                            <textarea id="form-message" rows="3" placeholder="Specify any unique entrance instructions, preferred service hours, or special requirements..." class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-teal-500 focus:outline-none"></textarea>
+                            <label for="form-message" class="block text-xs font-semibold text-slate-700 mb-1">Additional Project Details or Notes</label>
+                            <textarea id="form-message" rows="3" placeholder="Specify key areas of focus, pets in the household, preferred cleaning times, or closet organization needs..." class="w-full bg-white border border-slate-300 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-turquoise-500 focus:outline-none"></textarea>
                         </div>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="pt-4">
-                        <button type="submit" id="submit-btn" class="w-full bg-teal-500 hover:bg-teal-400 text-navy-950 font-bold py-4 rounded-xl shadow-lg shadow-teal-500/20 transition-all text-base flex items-center justify-center gap-2">
-                            <span>Submit Quote Request</span>
+                        <button type="submit" id="submit-btn" class="w-full bg-turquoise-500 hover:bg-turquoise-400 text-navy-950 font-bold py-4 rounded-xl shadow-lg shadow-turquoise-500/20 transition-all text-base flex items-center justify-center gap-2">
+                            <span>Submit Estimate Inquiry</span>
                             <i data-lucide="send" class="w-5 h-5"></i>
                         </button>
                     </div>
 
-                    <!-- Submission Success Feedback -->
+                    <!-- Submission Feedback Banner -->
                     <div id="form-feedback" class="hidden bg-emerald-50 border border-emerald-200 text-emerald-800 p-4 rounded-xl text-center text-sm font-medium">
                         <i data-lucide="check-circle" class="w-5 h-5 inline text-emerald-600 mr-2"></i>
-                        Inquiry Received! This demo form simulates real validation state logic.
+                        Demo Form Triggered: Form state validated successfully! (Backend transmission simulated for proposal demo).
                     </div>
 
                 </form>
@@ -581,62 +777,64 @@
         </div>
     </section>
 
-    <!-- Location & Contact Section -->
-    <section id="location" class="py-20 bg-white">
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Contact Details -->
+                <!-- Contact Info -->
                 <div class="lg:col-span-6 space-y-6">
-                    <span class="text-xs font-bold tracking-widest text-teal-600 uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Verified Listing Context</span>
-                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">NYC Office & Contact</h2>
+                    <span class="text-xs font-bold tracking-widest text-turquoise-700 uppercase bg-turquoise-50 px-3 py-1 rounded-full border border-turquoise-200">Preliminary Business Details</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-navy-900">Lake City Location &amp; Contact</h2>
                     <p class="text-slate-600 text-base leading-relaxed">
-                        US Environmental Cleaning and Disinfecting is listed in New York, NY. Reach out directly using the verified public phone listing.
+                        Connect directly with Extreme Clean and Organization using the preliminary contact channels below.
                     </p>
 
                     <div class="space-y-4 pt-2">
                         <!-- Address -->
                         <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-teal-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-turquoise-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="map-pin" class="w-5 h-5"></i>
                             </div>
                             <div>
-                                <h3 class="text-xs font-semibold text-slate-500 uppercase">Street Address</h3>
-                                <p class="text-sm font-bold text-navy-900">137 W 81st St, New York, NY 10024, USA</p>
-                                <p class="text-xs text-slate-500 mt-0.5">Upper West Side, Manhattan</p>
+                                <h3 class="text-xs font-semibold text-slate-500 uppercase">Address</h3>
+                                <p class="text-sm font-bold text-navy-900">607 NW Gibson Ln, Lake City, FL 32055, USA</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Columbia County, Florida</p>
                             </div>
                         </div>
 
                         <!-- Phone -->
                         <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-teal-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-turquoise-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <i data-lucide="phone" class="w-5 h-5"></i>
                             </div>
                             <div>
                                 <h3 class="text-xs font-semibold text-slate-500 uppercase">Direct Phone Line</h3>
-                                <a href="tel:+13474848420" class="text-base font-bold text-teal-600 hover:text-teal-700 transition-colors">
-                                    +1 (347) 484-8420
+                                <a href="tel:+13863442335" class="text-base font-bold text-turquoise-600 hover:text-turquoise-700 transition-colors">
+                                    +1 (386) 344-2335
                                 </a>
-                                <p class="text-xs text-slate-500 mt-0.5">Listing indicates 24-hour availability (verify with owner)</p>
+                                <p class="text-xs text-slate-500 mt-0.5">Click to initiate direct call</p>
                             </div>
                         </div>
 
-                        <!-- Google Rating -->
+                        <!-- Directories -->
                         <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
-                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-teal-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i data-lucide="star" class="w-5 h-5 fill-amber-400 text-amber-400"></i>
+                            <div class="w-10 h-10 rounded-lg bg-navy-900 text-turquoise-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i data-lucide="book-open" class="w-5 h-5"></i>
                             </div>
                             <div>
-                                <h3 class="text-xs font-semibold text-slate-500 uppercase">Public Rating</h3>
-                                <p class="text-sm font-bold text-navy-900">5.0 / 5.0 Rating (2 Google Reviews)</p>
+                                <h3 class="text-xs font-semibold text-slate-500 uppercase">Directory Listings</h3>
+                                <a href="https://www.bizarchive.com/business/extreme-clean-and-organization-386-344-2335" target="_blank" rel="noopener noreferrer" class="text-xs text-turquoise-600 hover:underline font-semibold block mt-0.5">
+                                    View BizArchive Directory Listing &rarr;
+                                </a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="pt-2">
-                        <a href="https://www.google.com/maps/search/?api=1&query=US+Environmental+Cleaning+and+Disinfecting+137+W+81st+St+NY" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-bold px-6 py-3.5 rounded-xl shadow-md transition-all">
-                            <span>Open in Google Maps</span>
-                            <i data-lucide="external-link" class="w-4 h-4 text-teal-400"></i>
+                    <div class="pt-2 flex flex-wrap gap-4">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Extreme+Clean+and+Organization+607+NW+Gibson+Ln+Lake+City+FL" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-bold px-6 py-3.5 rounded-xl shadow-md transition-all">
+                            <span>Open Google Maps</span>
+                            <i data-lucide="external-link" class="w-4 h-4 text-turquoise-400"></i>
                         </a>
                     </div>
                 </div>
@@ -645,13 +843,13 @@
                 <div class="lg:col-span-6">
                     <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 relative bg-slate-200 h-[380px] flex items-center justify-center">
                         <iframe 
-                            title="US Environmental Cleaning Location Map"
+                            title="Extreme Clean and Organization Location Map"
                             width="100%" 
                             height="100%" 
                             style="border:0;" 
                             loading="lazy" 
                             allowfullscreen 
-                            src="https://maps.google.com/maps?q=137%20W%2081st%20St,%20New%20York,%20NY%2010024&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                            src="https://maps.google.com/maps?q=607%20NW%20Gibson%20Ln,%20Lake%20City,%20FL%2032055&t=&z=14&ie=UTF8&iwloc=&output=embed">
                         </iframe>
                     </div>
                 </div>
@@ -660,7 +858,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Professional Footer -->
     <footer class="bg-navy-950 text-slate-400 pt-16 pb-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
             
@@ -669,16 +867,16 @@
                 <!-- Col 1: Brand Info -->
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-teal-500 flex items-center justify-center text-navy-950 font-bold">
-                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        <div class="w-9 h-9 rounded-lg bg-turquoise-500 flex items-center justify-center text-navy-950 font-bold">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
                         </div>
-                        <span class="font-heading text-lg font-extrabold text-white">US Environmental Cleaning</span>
+                        <span class="font-heading text-lg font-extrabold text-white">Extreme Clean and Organization</span>
                     </div>
                     <p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
-                        Commercial cleaning and disinfection concept for facility operators in New York City.
+                        Custom residential cleaning and organization service website concept for properties in Lake City, FL.
                     </p>
                     <p class="text-xs text-slate-500">
-                        Address: 137 W 81st St, New York, NY 10024 | Phone: +1 347-484-8420
+                        Address: 607 NW Gibson Ln, Lake City, FL 32055 | Phone: +1 (386) 344-2335
                     </p>
                 </div>
 
@@ -686,21 +884,21 @@
                 <div>
                     <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Quick Links</h3>
                     <ul class="space-y-2.5 text-xs sm:text-sm">
-                        <li><a href="#services" class="hover:text-teal-400 transition-colors">Proposed Services</a></li>
-                        <li><a href="#how-it-works" class="hover:text-teal-400 transition-colors">How It Works</a></li>
-                        <li><a href="#why-us" class="hover:text-teal-400 transition-colors">Why Choose Us</a></li>
-                        <li><a href="#quote-calculator" class="hover:text-teal-400 transition-colors">Request Quote</a></li>
+                        <li><a href="#services" class="hover:text-turquoise-400 transition-colors">Proposed Services</a></li>
+                        <li><a href="#checklist" class="hover:text-turquoise-400 transition-colors">Task Checklist</a></li>
+                        <li><a href="#transformation" class="hover:text-turquoise-400 transition-colors">Before/After Slider</a></li>
+                        <li><a href="#estimate" class="hover:text-turquoise-400 transition-colors">Request Estimate</a></li>
                     </ul>
                 </div>
 
-                <!-- Col 3: Contact Info -->
+                <!-- Col 3: Unconfirmed Details Note -->
                 <div>
-                    <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Listing Specs</h3>
+                    <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-4">Service Scope</h3>
                     <ul class="space-y-2.5 text-xs sm:text-sm">
-                        <li>City: New York, NY</li>
-                        <li>Category: Cleaning Service</li>
-                        <li>Listing Availability: 24 Hours</li>
-                        <li>Google Rating: 5.0 ★</li>
+                        <li>Lake City, FL &amp; Area</li>
+                        <li>Residential Focus</li>
+                        <li>Organizing Systems</li>
+                        <li>Custom Scheduling</li>
                     </ul>
                 </div>
 
@@ -709,13 +907,13 @@
             <!-- Disclaimer Notice -->
             <div class="pt-8 border-t border-slate-800 text-xs text-slate-500 leading-relaxed space-y-2">
                 <p>
-                    <strong>Concept Disclaimer:</strong> This website is an independent design proposal generated for presentation purposes to US Environmental Cleaning and Disinfecting. It is not an officially approved website of the business. All business details remain fully editable.
+                    <strong>Concept Disclaimer:</strong> This website is an unofficial design demonstration created to showcase potential web design services for Extreme Clean and Organization. It has not been approved by the business owner. Business details, services, operating hours, and policies remain preliminary and unconfirmed until verified directly with the owner.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-4 text-xs text-slate-600">
-                    <p>&copy; <span id="current-year"></span> US Environmental Cleaning Concept. Demo Presentation Design.</p>
+                    <p>&copy; <span id="current-year"></span> Extreme Clean Concept Design. Unofficial Client Proposal.</p>
                     <div class="flex gap-4">
-                        <a href="#" class="hover:text-slate-400">Privacy Proposal</a>
-                        <a href="#" class="hover:text-slate-400">Terms of Demo</a>
+                        <a href="#" class="hover:text-slate-400">Proposal Terms</a>
+                        <a href="#" class="hover:text-slate-400">Privacy Notice</a>
                     </div>
                 </div>
             </div>
@@ -726,16 +924,16 @@
     <!-- Service Detail Modal Overlay -->
     <div id="service-modal" class="fixed inset-0 z-50 hidden bg-navy-950/80 backdrop-blur-sm flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl relative border border-slate-200">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600" aria-label="Close modal">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
-            <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-4">
+            <div class="w-10 h-10 rounded-xl bg-turquoise-50 text-turquoise-600 flex items-center justify-center mb-4">
                 <i data-lucide="info" class="w-5 h-5"></i>
             </div>
-            <h3 id="modal-title" class="text-xl font-bold text-navy-900 mb-2">Service Details</h3>
-            <p id="modal-body" class="text-sm text-slate-600 leading-relaxed mb-6">Details regarding the selected proposed category.</p>
-            <a href="#quote-calculator" onclick="closeModal()" class="block text-center py-3 bg-teal-500 hover:bg-teal-400 text-navy-950 font-bold text-sm rounded-xl transition-colors">
-                Include in Quote Request
+            <h3 id="modal-title" class="text-xl font-bold text-navy-900 mb-2">Category Overview</h3>
+            <p id="modal-body" class="text-sm text-slate-600 leading-relaxed mb-6">Service details text placeholder.</p>
+            <a href="#estimate" onclick="closeModal()" class="block text-center py-3 bg-turquoise-500 hover:bg-turquoise-400 text-navy-950 font-bold text-sm rounded-xl transition-colors">
+                Include in Estimate Request
             </a>
         </div>
     </div>
@@ -747,6 +945,7 @@
             lucide.createIcons();
             document.getElementById('current-year').textContent = new Date().getFullYear();
             calculateEstimate();
+            initBeforeAfterSlider();
         });
 
         // Mobile Menu Drawer Toggle
@@ -757,8 +956,8 @@
             drawer.classList.toggle('hidden');
         });
 
-        // Interactive Service Filtering
-        function filterServices(category) {
+        // Interactive Service Category Filter
+        function filterServices(category, btnElement) {
             const cards = document.querySelectorAll('.service-card');
             const tabs = document.querySelectorAll('.service-tab');
 
@@ -767,8 +966,8 @@
                 tab.classList.add('bg-white', 'text-slate-600');
             });
 
-            event.target.classList.remove('bg-white', 'text-slate-600');
-            event.target.classList.add('bg-navy-900', 'text-white');
+            btnElement.classList.remove('bg-white', 'text-slate-600');
+            btnElement.classList.add('bg-navy-900', 'text-white');
 
             cards.forEach(card => {
                 if (category === 'all' || card.dataset.category === category) {
@@ -779,7 +978,25 @@
             });
         }
 
-        // Service Modal Window Functions
+        // Checklist Viewer Tab Switching
+        function switchChecklistTab(tabKey, btnElement) {
+            const tabs = document.querySelectorAll('.checklist-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('text-turquoise-600', 'border-turquoise-500');
+                tab.classList.add('text-slate-500', 'border-transparent');
+            });
+
+            btnElement.classList.remove('text-slate-500', 'border-transparent');
+            btnElement.classList.add('text-turquoise-600', 'border-turquoise-500');
+
+            document.getElementById('checklist-standard').classList.add('hidden');
+            document.getElementById('checklist-deep').classList.add('hidden');
+            document.getElementById('checklist-moveinout').classList.add('hidden');
+
+            document.getElementById(`checklist-${tabKey}`).classList.remove('hidden');
+        }
+
+        // Service Modal Popup Functions
         function openModal(title, description) {
             document.getElementById('modal-title').textContent = title;
             document.getElementById('modal-body').textContent = description;
@@ -790,29 +1007,67 @@
             document.getElementById('service-modal').classList.add('hidden');
         }
 
-        // Dynamic Interactive Price Estimator Logic
+        // Dynamic Price Estimator Logic
         function calculateEstimate() {
-            const propType = document.getElementById('calc-property').value;
-            const sqft = parseInt(document.getElementById('calc-sqft').value) || 2000;
-            const freq = document.getElementById('calc-frequency').value;
+            const prop = document.getElementById('calc-prop').value;
+            const sqft = parseInt(document.getElementById('calc-sqft').value) || 1800;
+            const serviceType = document.getElementById('calc-type').value;
 
-            let ratePerSqFt = 0.08;
-            if (propType === 'healthcare') ratePerSqFt = 0.12;
-            if (propType === 'facility') ratePerSqFt = 0.10;
+            let baseRate = 0.08;
+            if (serviceType === 'deep') baseRate = 0.11;
+            if (serviceType === 'move') baseRate = 0.13;
+            if (serviceType === 'organization') baseRate = 0.10;
 
-            let multiplier = 1;
-            if (freq === 'daily') multiplier = 0.7; // Volume discount
-            if (freq === 'onetime') multiplier = 1.4;
+            if (prop === 'apartment') baseRate *= 0.95;
 
-            const baseCost = Math.round(sqft * ratePerSqFt * multiplier);
-            const minCost = Math.max(150, Math.round(baseCost * 0.85));
-            const maxCost = Math.max(220, Math.round(baseCost * 1.15));
+            const baseCost = Math.round(sqft * baseRate);
+            const minCost = Math.max(120, Math.round(baseCost * 0.85));
+            const maxCost = Math.max(160, Math.round(baseCost * 1.15));
 
-            document.getElementById('estimate-price').textContent = `$${minCost} - $${maxCost} / visit`;
+            document.getElementById('estimate-price').textContent = `$${minCost} - $${maxCost}`;
+        }
+
+        // Before & After Interactive Touch/Drag Slider Logic
+        function initBeforeAfterSlider() {
+            const container = document.getElementById('ba-slider');
+            const overlay = document.getElementById('ba-overlay');
+            const handle = document.getElementById('ba-handle');
+            let isDragging = false;
+
+            function updateSliderPosition(x) {
+                const rect = container.getBoundingClientRect();
+                let position = (x - rect.left) / rect.width;
+                if (position < 0) position = 0;
+                if (position > 1) position = 1;
+
+                const percentage = position * 100;
+                overlay.style.width = `${percentage}%`;
+                handle.style.left = `${percentage}%`;
+            }
+
+            container.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                updateSliderPosition(e.clientX);
+            });
+
+            window.addEventListener('mouseup', () => { isDragging = false; });
+            window.addEventListener('mousemove', (e) => {
+                if (isDragging) updateSliderPosition(e.clientX);
+            });
+
+            container.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                updateSliderPosition(e.touches[0].clientX);
+            });
+
+            window.addEventListener('touchend', () => { isDragging = false; });
+            window.addEventListener('touchmove', (e) => {
+                if (isDragging) updateSliderPosition(e.touches[0].clientX);
+            });
         }
 
         // Form Submit Simulation Logic
-        function handleQuoteSubmit(e) {
+        function handleFormSubmit(e) {
             e.preventDefault();
             const btn = document.getElementById('submit-btn');
             const feedback = document.getElementById('form-feedback');
@@ -823,9 +1078,9 @@
 
             setTimeout(() => {
                 btn.disabled = false;
-                btn.innerHTML = `<span>Submit Quote Request</span><i data-lucide="send" class="w-5 h-5"></i>`;
+                btn.innerHTML = `<span>Submit Estimate Inquiry</span><i data-lucide="send" class="w-5 h-5"></i>`;
                 feedback.classList.remove('hidden');
-                document.getElementById('quote-form').reset();
+                document.getElementById('estimate-form').reset();
                 calculateEstimate();
                 lucide.createIcons();
             }, 1200);
